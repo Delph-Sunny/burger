@@ -57,8 +57,9 @@ it will be saved in the app's database, devoured or not
 
 Another file `seeds.sql` writes insert queries to populate the `burgers` table with at least three entries.  
 
- `schema.sql` and `seeds.sql` should be run from CLI into the mysql server.
+ `schema.sql` and `seeds.sql` should be run from CLI into the mysql server.  
 
+:warning:   TO DO
 
 ## Installation and Usage  
 - You can run the Heroku deployed app directly by clicking on this [link](TO DO). 
