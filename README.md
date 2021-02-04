@@ -25,7 +25,7 @@
 
 ## Description  
 
-This restaurant app lets users input the names of burgers they'd like to eat. It uses [Node](https://nodejs.org/en/), [Express](https://www.npmjs.com/package/express), [MySQL](https://www.npmjs.com/package/mysql),  [Handlebars](https://www.npmjs.com/package/express-handlebars) and [Heroku](https://dashboard.heroku.com/apps) for deployment. It also uses ORM technique and follows the MVC design pattern. 
+This restaurant app, called `Eat-Da-Burger!`, lets users input the names of burgers they'd like to eat. It uses [Node](https://nodejs.org/en/), [Express](https://www.npmjs.com/package/express), [MySQL](https://www.npmjs.com/package/mysql),  [Handlebars](https://www.npmjs.com/package/express-handlebars) and [Heroku](https://dashboard.heroku.com/apps) for deployment. It also uses ORM technique and follows the MVC design pattern. 
 
 
 ## User Story and Details
@@ -42,12 +42,12 @@ SO other users can click on it.
 WHEN I click on a `Devour it!` button,
 the burger will move to the right side of the page.
 WHEN I submit a burger's name, 
-it will be saved in the app's database, devoured or not
+it will be saved in the app's database, devoured or not.
 ```
 
 :information_source:  
 
- Under a `db` folder, a file `schema.sql`does the following:
+ Under a `db` folder, a file `schema.sql` does the following:
    * Create the `burgers_db`.
    * Switch to or use the `burgers_db`.
    * Create a `burgers` table with these fields:  
