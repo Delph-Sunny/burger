@@ -28,7 +28,7 @@ const objToSql = (ob) => {
       }
       arr.push(`${key}=${value}`);
     }
-  }  
+  }
   return arr.toString();  // Array of strings to a single comma-separated string
 };
 
