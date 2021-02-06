@@ -8,7 +8,7 @@ const burger = require("../models/burger.js");
 router.get("/", (req, res) => {
     burger.all((data) => {
         const hbsObject = {
-            burgerInfo: data
+            burgers: data
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
-    burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured],
+    burger.create(req.body.burger_name,
         (result) => {
             res.json({ id: result.insertId });  // Send back the ID of the new quote
         });
