@@ -24,8 +24,7 @@ $(document).ready(function () {
   $(".add-burger").on("submit", function (event) {    
     event.preventDefault();// To preventDefault on a submit event.
     const newBurger = {
-      burger_name: $("#new-burger").val().trim(),
-      devoured: "0"   // Enter as false
+      burger_name: $("#new-burger").val().trim()
     };
 
     // Send the POST request.
@@ -33,10 +32,8 @@ $(document).ready(function () {
       type: "POST",
       data: newBurger,
     }).then(() =>{
-      console.log("New burger created", );      
+      console.log("New burger created", newBurger );      
       location.reload(); // Reload the page to get the updated list
     });
   });
-
-
 });
