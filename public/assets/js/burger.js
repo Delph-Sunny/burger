@@ -4,8 +4,8 @@ $(document).ready(function () {
 
   $(".devour-btn").on("click", function (event) {
     const id = $(this).data("id");
-    console.log(id)         // FOR TESTING
-    const newStatus = $(this).data("status");
+    let newStatus = $(this).data("status");
+    if (newStatus === 0) newStatus += 1;
     const newStatusDev = {
       devoured: newStatus,
     };
