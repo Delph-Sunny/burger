@@ -2,17 +2,41 @@
 $(document).ready(function () {
   console.info('DOM loaded');
 
-  $("#devour-btn").on("click", function () {
-    let id = $(this).data("index");
+  $(".devour-btn").on("click", function (event) {
+    const id = $(this).data("id");
     console.log(id)         // FOR TESTING
-    var queryURL = `/api/burgers/${id}`;
-    console.log(queryURL) 
+    const newStatus = $(this).data("status");
+    const newStatusDev = {
+      devoured: newStatus,
+    };
+
+    const queryURL = `/api/burgers/${id}`;
     $.ajax({
       url: queryURL,      
-      method: "PUT"
+      type: "PUT",
+      data: newStatusDev
     }).then(() => {
-     console.log("eaten: ", result);
+     console.log("eaten!", id);
      location.reload("/");
     });
   });
+
+  $(".add-burger").on("submit", function (event) {    
+    event.preventDefault();// To preventDefault on a submit event.
+    const newBurger = {
+      burger_name: $("#new-burger").val().trim(),
+      devoured: "0"   // Enter as false
+    };
+
+    // Send the POST request.
+    $.ajax("/api/burgers", {
+      type: "POST",
+      data: newBurger,
+    }).then(() =>{
+      console.log("New burger created", );      
+      location.reload(); // Reload the page to get the updated list
+    });
+  });
+
+
 });

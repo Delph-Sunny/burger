@@ -1,34 +1,46 @@
-<div class="container-sm">
+
+
     <div class="row">
-        <div class="col-6">
-            <h2>UNEATEN</h2>
-            <ul>
+        <div class="col-sm-6">
+            <ul class="waiting-burger">
                 {{#each burgers}}
                 {{#unless devoured}}
-                <div class="waiting-burger">
-                    <div>
-                        {{burger_name}}
-                        <button type="button" id="devour-btn" data-index="{{id}}"> Devour!</button>
+                <div class="row py-2 bg-success">
+                    <div class="col-6">
+                        {{id}}. {{burger_name}}
                     </div>
-                </div>                
+                    <div class="col-3">
+                        <button class="btn btn-sm btn-info devour-btn" data-id="{{id}}"
+                            data-status="{{devoured}}">Devour
+                            it!</button>
+                    </div>
+                </div>
                 {{/unless}}
                 {{/each}}
+
             </ul>
         </div>
-        <div class="col-6">
-            <h2>EATEN</h2>
-            <ul>
+        <div class="col-sm-6">
+            <ul class="eaten-burger">
                 {{#each burgers}}
                 {{#if devoured}}
-                <div class="eaten-burger">
-                    <div>
-                        {{burger_name}}
-                    </div>
-                </div> 
+                <div class ="py-2 bg-success">
+                    {{id}}. {{burger_name}}
+                </div>
                 {{/if}}
                 {{/each}}
             </ul>
         </div>
     </div>
-
-</div>
+    <div class="containerd-flex">
+        <div class="row mb-2">
+            <form class="add-burger text-center col-10">
+                <div class="form-group">
+                    <label for="new-burger">Add A Burger</label>
+                    <input type="text" class="form-control" name="burger_name" id="new-burger" 
+                        placeholder="Enter a burger you want to eat here">
+                </div>
+                <button type="submit" class="btn btn-sm btn-secondary">Submit</button>
+            </form>
+        </div>
+    </div>
