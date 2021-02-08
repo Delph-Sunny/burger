@@ -98,7 +98,7 @@ The directory structure is as below:
 ```
 
 ## Installation and Usage  
-- You can run the Heroku deployed app directly by clicking on this [link](TO DO). 
+- You can run the Heroku deployed app directly by clicking on this [link](https://homework-13-create-your-burger.herokuapp.com/). 
 
 - To install without using the deployed app, follow the below steps: 
     - Open a terminal instance.  
@@ -113,7 +113,7 @@ The directory structure is as below:
 Launched app:  
 ![burger](./images/Snippet1.PNG) 
 
-:movie_camera: The full movie showing the functionality of the application can be found [here](https://youtu.be/msvdn95x9OM). 
+ 
   
 ## Credits  
  
