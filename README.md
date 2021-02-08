@@ -82,7 +82,7 @@ Launched app:
   
 ## Credits  
  
-Photo by Hermes Rivera from [www.Unsplash.com](https://www.Unsplash.com/)  
+Image by Pintera Studio from [www.pixabay.com](https://www.pixabay.com/)  
 Icon made by Freepik from [www.flaticon.com](https://www.flaticon.com/)  
 
 

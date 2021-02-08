@@ -3,3 +3,11 @@
     display: block;
     margin: auto;
 }
+
+h1, label {
+    font-family: 'Bahnschriff';    
+}
+
+label {
+    font-size: 2rem;
+}
