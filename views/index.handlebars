@@ -1,14 +1,15 @@
-<div class="row">
-    <div class="col-sm-6">
-        <ul class="waiting-burger">
+<section class="row">
+    
+        <ul class="col-sm-6">
+            <h5>Ordered</h5>
             {{#each burgers}}
             {{#unless devoured}}
-            <div class="row py-2 bg-success">
+            <div class="row py-2 burger-row">
                 <div class="col-8">
                     {{id}}. {{burger_name}}
                 </div>
                 <div class="col-3">
-                    <button class="btn btn-sm btn-info text-nowrap devour-btn" data-id="{{id}}"
+                    <button class="btn btn-sm devour-btn text-nowrap text-white" data-id="{{id}}"
                         data-status="{{devoured}}">Devour
                         it!</button>
                 </div>
@@ -16,12 +17,11 @@
             {{/unless}}
             {{/each}}
         </ul>
-    </div>
-    <div class="col-sm-6">
-        <ul class="eaten-burger">
+        <ul class="col-sm-6">
+            <h5>Devoured</h5>
             {{#each burgers}}
             {{#if devoured}}
-            <div class="row py-2 bg-success">
+            <div class="row py-2 burger-row">
                 <div class="col-12 bg-primary">
                     {{id}}. {{burger_name}}
                 </div>
@@ -29,16 +29,16 @@
             {{/if}}
             {{/each}}
         </ul>
-    </div>
-</div>
 
-<div class="row mb-2">
+</section>
+
+<section class="row mb-2">
     <form class="add-burger text-center col-12 bg-primary">
         <div class="form-group">
             <label for="new-burger">Add A Burger</label>
             <input type="text" class="form-control" name="burger_name" id="new-burger"
                 placeholder="Enter a burger you want to eat here">
         </div>
-        <button type="submit" class="btn btn-sm btn-secondary">Submit</button>
+        <button type="submit" class="btn btn-sm text-white">Submit</button>
     </form>
-</div>
+</section>
