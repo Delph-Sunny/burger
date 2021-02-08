@@ -7,8 +7,6 @@ let password = process.env.DB_PASSWORD;
 let database = process.env.DB_NAME;
 let connection;
 
-console.log(host, user, password, database)
-
 if (process.env.JAWSDB_URL) {
   // Connect DB on Heroku (JawsDB)
   connection = mysql.createConnection(process.env.JAWSDB_URL);
