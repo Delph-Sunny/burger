@@ -59,18 +59,53 @@ Another file `seeds.sql` writes insert queries to populate the `burgers` table w
 
  `schema.sql` and `seeds.sql` should be run from CLI into the mysql server.  
 
-:warning:   TO DO
+The directory structure is as below: 
+```
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── burger_style.css
+│       ├── img
+│       │   ├── burger.png
+│       │   └── hamburger.png
+│       └── js
+│           └── burger.js
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+        └── main.handlebars
+```
 
 ## Installation and Usage  
 - You can run the Heroku deployed app directly by clicking on this [link](TO DO). 
 
 - To install without using the deployed app, follow the below steps: 
-    - Open a terminal instance  
-    - Clone the following [repo](https://github.com/Delph-Sunny/burger)  
-    - In the working directory, install the dependencies package with the following code line `npm i`  
-
-
-    -   :warning:   TO DO
+    - Open a terminal instance.  
+    - Clone the following [repo](https://github.com/Delph-Sunny/burger).  
+    - In the working directory, install the dependencies package.  with the following code line `npm i`.  
+    - Start the server with `npm run start` to launch the app. 
+    - Go to the `http://localhost:`+ PORT on your machine.  Note: You need to run the db before navigating to the site.   
   
 
 ## Images of the App :mag:  
