@@ -1,11 +1,11 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(document).ready(function () {
-  console.info('DOM loaded');
+  console.info("DOM loaded");
 
   $(".devour-btn").on("click", function (event) {
     const id = $(this).data("id");
-    console.log(id)         // FOR TESTING
-    const newStatus = $(this).data("status");
+    let newStatus = $(this).data("status");
+    if (newStatus === 0) newStatus += 1;  // Change status from false to true
     const newStatusDev = {
       devoured: newStatus,
     };
@@ -16,7 +16,6 @@ $(document).ready(function () {
       type: "PUT",
       data: newStatusDev
     }).then(() => {
-     console.log("eaten!", id);
      location.reload("/");
     });
   });
@@ -31,8 +30,7 @@ $(document).ready(function () {
     $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger,
-    }).then(() =>{
-      console.log("New burger created", newBurger );      
+    }).then(() =>{    
       location.reload(); // Reload the page to get the updated list
     });
   });

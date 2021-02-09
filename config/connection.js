@@ -1,6 +1,7 @@
 // Import the dependencies
 require("dotenv").config();
 const mysql = require("mysql");
+
 let host = process.env.DB_HOST;
 let user = process.env.DB_USER;
 let password = process.env.DB_PASSWORD;
