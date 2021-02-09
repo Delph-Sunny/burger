@@ -103,9 +103,10 @@ The directory structure is as below:
 - To install without using the deployed app, follow the below steps: 
     - Open a terminal instance.  
     - Clone the following [repo](https://github.com/Delph-Sunny/burger).  
-    - In the working directory, install the dependencies package.  with the following code line `npm i`.  
+    - In the working directory, install the dependencies package  with the following code line `npm i`.
+    - Add the .env file with all login information needed.    
     - Start the server with `npm run start` to launch the app. 
-    - Go to the `http://localhost:`+ PORT on your machine.  Note: You need to run the db before navigating to the site.   
+    - Go to the `http://localhost:`+ PORT on your machine.  Note: You need to run the db in mysql CLI before navigating to the site.  
   
 
 ## Images of the App :mag:  
@@ -113,11 +114,10 @@ The directory structure is as below:
 Launched app:  
 ![burger](./images/Snippet1.PNG) 
 
- 
-  
+
 ## Credits  
  
-Image by Pintera Studio from [www.pixabay.com](https://www.pixabay.com/)  
+Image by wwww.ClipProject.info on [www.pinclipart.com](https://www.pinclipart.com/)  
 Icon made by Freepik from [www.flaticon.com](https://www.flaticon.com/)  
 
 
