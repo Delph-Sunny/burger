@@ -1,14 +1,14 @@
 <section class="row">
     
-        <ul class="col-sm-6">
+        <ul class="col-sm-5">
             <h5>Ordered</h5>
             {{#each burgers}}
             {{#unless devoured}}
-            <div class="row py-2 burger-row">
+            <div class="row py-2 burger-row border border-white">
                 <div class="col-8">
                     {{id}}. {{burger_name}}
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                     <button class="btn btn-sm devour-btn text-nowrap text-white" data-id="{{id}}"
                         data-status="{{devoured}}">Devour
                         it!</button>
@@ -17,12 +17,13 @@
             {{/unless}}
             {{/each}}
         </ul>
-        <ul class="col-sm-6">
+         <ul class="col-sm-2"></ul>
+        <ul class="col-sm-5">
             <h5>Devoured</h5>
             {{#each burgers}}
             {{#if devoured}}
             <div class="row py-2 burger-row">
-                <div class="col-12 bg-primary">
+                <div class="col-sm-12">
                     {{id}}. {{burger_name}}
                 </div>
             </div>
@@ -32,12 +33,12 @@
 
 </section>
 
-<section class="row mb-2">
-    <form class="add-burger text-center col-12 bg-primary">
+<section class="row mb-3">
+    <form class="add-burger text-center col-12">
         <div class="form-group">
             <label for="new-burger">Add A Burger</label>
             <input type="text" class="form-control" name="burger_name" id="new-burger"
-                placeholder="Enter a burger you want to eat here">
+                placeholder="Enter the burger you want to eat here">
         </div>
         <button type="submit" class="btn btn-sm text-white">Submit</button>
     </form>
