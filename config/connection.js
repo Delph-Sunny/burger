@@ -1,18 +1,22 @@
 // Import the dependencies
+dotenv = require("dotenv").config();
 const mysql = require("mysql");
-const dotenv = require("dotenv").config();
+let host = process.env.DB_HOST;
+let user = process.env.DB_USER;
+let password = process.env.DB_PASSWORD;
+let database = process.env.DB_NAME;
+let connection;
 
 if (process.env.JAWSDB_URL) {
   // Connect DB on Heroku (JawsDB)
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
   // Connect to the DB on localhost
-  const connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    port: 3306,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: "burgers_db"
+  connection = mysql.createConnection({
+    host,
+    user,
+    password,
+    database
   });
 };
 
