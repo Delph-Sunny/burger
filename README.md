@@ -1,8 +1,5 @@
 # 13-Burger
-
-:construction: IN PROGRESS  :construction:  
-
----
+ 
 
  <a href="https://img.shields.io/badge/node-v12.19.0-orange?style=plastic"><img alt="Node.js use" src="https://img.shields.io/badge/node-v12.19.0-orange?style=plastic"/></a>
 <a href="https://img.shields.io/badge/express-v4.16.4-red?style=plastic"><img alt="Express used" src="https://img.shields.io/badge/express-v4.16.4-red?style=plastic"/></a>
@@ -17,7 +14,7 @@
 * [Description](#Description)
 * [User Story and Details](#User-Story-and-Details)  
 * [Installation and Usage](#Installation-and-Usage)  
-* [Images of the app](#Images-of-the-app-) 
+* [Images of the app](#Images-of-the-app-:mag:) 
 * [Credits](#Credits) 
 * [License](#License)  
 * [Contact](#Contact) 
