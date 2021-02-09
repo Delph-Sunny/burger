@@ -14,7 +14,7 @@
 * [Description](#Description)
 * [User Story and Details](#User-Story-and-Details)  
 * [Installation and Usage](#Installation-and-Usage)  
-* [Images of the app](#Images-of-the-app-:mag:) 
+* [Images of the app](#Images-of-the-app) 
 * [Credits](#Credits) 
 * [License](#License)  
 * [Contact](#Contact) 
@@ -106,9 +106,9 @@ The directory structure is as below:
     - Go to the `http://localhost:`+ PORT on your machine.  Note: You need to run the db in mysql CLI before navigating to the site.  
   
 
-## Images of the App :mag:  
+## Images of the App   
 
-Launched app:  
+:mag: Launched app:  
 ![burger](./images/Snippet1.PNG) 
 
 
