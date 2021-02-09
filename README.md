@@ -82,7 +82,7 @@ The directory structure is as below:
 │       ├── css
 │       │   └── burger_style.css
 │       ├── img
-│       │   ├── burger.png
+│       │   ├── burger1.png
 │       │   └── hamburger.png
 │       └── js
 │           └── burger.js
